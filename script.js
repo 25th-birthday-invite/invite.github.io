@@ -4,8 +4,8 @@
    ============================================================ */
 const CONFIG = {
   herName: "Vanshika",                          // ✏️ her name
-  yourName: "Jain",                         // ✏️ your name (signs the letter)
-  birthdayDate: "2026-10-10T11:30:00",        // ✏️ the big day: YYYY-MM-DDTHH:MM:SS
+  yourName: "P",                         // ✏️ your name (signs the letter)
+  birthdayDate: "2026-11-10T11:30:00",        // ✏️ the big day: YYYY-MM-DDTHH:MM:SS
 
   letter: `Twenty-five looks exactly like you — luminous, warm, and impossible to look away from.
 
