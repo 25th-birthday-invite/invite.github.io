@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ♥ The 25th</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="ambient" aria-hidden="true"></div>
+
+<!-- THE SEALED ENVELOPE -->
+<div id="envelopeScene">
+  <p class="scene-kicker">a letter, sealed for one person only</p>
+  <div class="envelope" id="envelope">
+    <div class="env-back"></div>
+    <div class="env-letter">
+      <span class="l-for">for the birthday girl</span>
+      <span class="l-name" id="envName">Amelia</span>
+      <span class="l-heart">♥</span>
+    </div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <button class="seal" id="seal" aria-label="Break the seal and open your invitation">25</button>
+  </div>
+  <p class="scene-hint">tap the wax seal to open ♥</p>
+</div>
+<noscript><style>#envelopeScene{display:none}</style></noscript>
+
+<header class="nav">
+  <a class="brand" href="index.html"><span class="b-heart">♥</span> her <em>25th</em></a>
+  <nav>
+    <a href="index.html" class="active">The Day</a>
+    <a href="coupons.html">The Coupons</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wm" aria-hidden="true">25</div>
+    <p class="h-item kicker" style="--i:1">an invitation for the birthday girl</p>
+    <h1 class="h-item" style="--i:2">
+      <span class="h-happy">happy 25th,</span>
+      <span class="h-name" id="herNameHero">Amelia</span>
+    </h1>
+    <p class="h-item h-sub" style="--i:3">one whole day · zero decisions · entirely yours</p>
+    <p class="h-item h-date" id="dateLine" style="--i:4"></p>
+    <div class="h-item" style="--i:5">
+      <div class="count" id="countdown">
+        <div class="cell"><b id="cdD">00</b><span>days</span></div>
+        <div class="cell"><b id="cdH">00</b><span>hours</span></div>
+        <div class="cell"><b id="cdM">00</b><span>min</span></div>
+        <div class="cell"><b id="cdS">00</b><span>sec</span></div>
+      </div>
+      <p class="cd-note" id="cdNote">until your day begins</p>
+    </div>
+    <p class="h-item h-hand" style="--i:6">scroll slowly, my love — every hour was picked with you in mind ↓</p>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span></span>✦ ♥ ✦<span></span></div>
+
+  <section class="plan">
+    <div class="sec-head" data-reveal>
+      <p class="kicker">the itinerary</p>
+      <h2>One day, built <em>hour by hour</em></h2>
+      <p class="sec-sub">Your only job is to show up beautiful. I'm handling everything else.</p>
+    </div>
+    <div class="timeline" id="timeline"><div id="tlProgress"></div></div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="m-track">
+      <span>happy birthday, my love ✦ twenty-five ✦ happy birthday, my love ✦ twenty-five ✦&nbsp;</span>
+      <span>happy birthday, my love ✦ twenty-five ✦ happy birthday, my love ✦ twenty-five ✦&nbsp;</span>
+    </div>
+  </div>
+
+  <section class="letter">
+    <div class="paper" data-reveal>
+      <p id="letterText"></p>
+      <p class="sign">all my love, <span data-yourname>Daniel</span> ♥</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span></span>✦ ♥ ✦<span></span></div>
+
+  <section class="cta" data-reveal>
+    <p class="cta-kicker">p.s.</p>
+    <h2>Two coupons are waiting for you.</h2>
+    <p class="cta-sub">birthday privileges, redeemable on demand</p>
+    <a class="btn" href="coupons.html">open your coupons <span class="btn-arrow">→</span></a>
+  </section>
+</main>
+
+<footer>
+  <div class="f-orn">✦ ♥ ✦</div>
+  <p>for her eyes only · made with love by <span data-yourname>Daniel</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
